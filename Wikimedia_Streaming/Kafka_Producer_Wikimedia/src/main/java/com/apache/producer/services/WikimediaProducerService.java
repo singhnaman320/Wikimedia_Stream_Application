@@ -44,7 +44,7 @@ public class WikimediaProducerService {
 		EventSource eventSource = builder.build();
 		eventSource.start();
 		
-		TimeUnit.MINUTES.sleep(10);
+		TimeUnit.MINUTES.sleep(10); // after 10 minutes process stopped
 		
 		
 	}
