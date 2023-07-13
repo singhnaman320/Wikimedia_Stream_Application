@@ -6,4 +6,14 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>Kafka_Producer_Wikimedia</artifactId>
+  
+  <dependencies>
+		<!-- https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource -->
+		<dependency>
+		    <groupId>com.launchdarkly</groupId>
+		    <artifactId>okhttp-eventsource</artifactId>
+		    <version>4.1.1</version>
+		</dependency>
+
+  </dependencies>
 </project>

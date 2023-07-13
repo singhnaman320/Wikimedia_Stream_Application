@@ -20,5 +20,10 @@ public class WikimediaProducerService {
 	public void sendMessage() {
 		
 		String givenTopic = "wikimediaStream";
+		
+		// To read real time stream data from Wikimedia we will use event source
+		// We will add some library okHttp EventSource from maven
+		
+		
 	}
 }
