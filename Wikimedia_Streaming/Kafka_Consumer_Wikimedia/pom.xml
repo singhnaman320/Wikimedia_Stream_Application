@@ -6,6 +6,8 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>Kafka_Consumer_Wikimedia</artifactId>
+  <!-- Add packaging-->
+  <packaging>jar</packaging>
   
   <dependencies>
 	  
