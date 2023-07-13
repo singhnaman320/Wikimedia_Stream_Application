@@ -70,5 +70,6 @@
 
 	<modules>
 		<module>Kafka_Producer_Wikimedia</module>
+		<module>Kafka_Consumer_Wikimedia</module>
 	</modules>
 </project>
