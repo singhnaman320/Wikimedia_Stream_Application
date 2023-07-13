@@ -17,5 +17,8 @@ public class WikimediaProducerService {
 		this.kafkaTemplate = kafkaTemplate;
 	}
 	
-	
+	public void sendMessage() {
+		
+		String givenTopic = "wikimediaStream";
+	}
 }
