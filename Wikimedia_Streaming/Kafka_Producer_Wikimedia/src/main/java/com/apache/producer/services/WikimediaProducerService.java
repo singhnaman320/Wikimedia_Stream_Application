@@ -26,8 +26,8 @@ public class WikimediaProducerService {
 		 
 		 * As data streaming from Wikimedia is JSON, so we have to use Jackson libraries.
 		 * we will add "Jackson core" and "Jackson databind" 
-		
 		*/
+		
 		
 		
 	}
