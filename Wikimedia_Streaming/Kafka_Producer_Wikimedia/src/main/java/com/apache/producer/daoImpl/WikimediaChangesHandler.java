@@ -40,6 +40,8 @@ public class WikimediaChangesHandler implements BackgroundEventHandler{
 		// TODO Auto-generated method stub
 		
 		LOGGER.info(String.format("Event data:", messageEvent.getData()));
+		
+		kafkaTemplate.send(topic, messageEvent.getData());
 	}
 
 	@Override
