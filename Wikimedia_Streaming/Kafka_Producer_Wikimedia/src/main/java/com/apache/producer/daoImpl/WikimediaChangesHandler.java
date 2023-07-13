@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 
-import com.apache.producer.services.WikimediaProducerService;
 import com.launchdarkly.eventsource.MessageEvent;
 import com.launchdarkly.eventsource.background.BackgroundEventHandler;
 
@@ -40,6 +39,7 @@ public class WikimediaChangesHandler implements BackgroundEventHandler{
 	public void onMessage(String event, MessageEvent messageEvent) throws Exception {
 		// TODO Auto-generated method stub
 		
+		LOGGER.info(String.format("Event data:", messageEvent.getData()));
 	}
 
 	@Override
