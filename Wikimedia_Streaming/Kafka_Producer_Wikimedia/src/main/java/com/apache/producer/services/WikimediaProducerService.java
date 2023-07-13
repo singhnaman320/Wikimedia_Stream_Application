@@ -21,8 +21,13 @@ public class WikimediaProducerService {
 		
 		String givenTopic = "wikimediaStream";
 		
-		// To read real time stream data from Wikimedia we will use event source
-		// We will add some library okHttp EventSource from maven
+		/* To read real time stream data from Wikimedia we will use event source.
+		 * We will add some library okHttp EventSource from maven
+		 
+		 * As data streaming from Wikimedia is JSON, so we have to use Jackson libraries.
+		 * we will add "Jackson core" and "Jackson databind" 
+		
+		*/
 		
 		
 	}

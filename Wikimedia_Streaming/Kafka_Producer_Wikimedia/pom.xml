@@ -8,12 +8,23 @@
   <artifactId>Kafka_Producer_Wikimedia</artifactId>
   
   <dependencies>
+	  
 		<!-- https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource -->
 		<dependency>
 		    <groupId>com.launchdarkly</groupId>
 		    <artifactId>okhttp-eventsource</artifactId>
 		    <version>4.1.1</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		</dependency>
+		
   </dependencies>
 </project>
