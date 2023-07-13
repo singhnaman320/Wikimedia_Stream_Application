@@ -1,10 +1,19 @@
 package com.apache.producer.daoImpl;
 
+import org.springframework.kafka.core.KafkaTemplate;
+
 import com.launchdarkly.eventsource.MessageEvent;
 import com.launchdarkly.eventsource.background.BackgroundEventHandler;
 
 // Read streaming data
 public class WikimediaChangesHandler implements BackgroundEventHandler{
+
+	private KafkaTemplate<String, String> kafkaTemplate;
+	
+	public WikimediaChangesHandler(KafkaTemplate<String, String> kafkaTemplate) {
+		super();
+		this.kafkaTemplate = kafkaTemplate;
+	}
 
 	@Override
 	public void onOpen() throws Exception {
