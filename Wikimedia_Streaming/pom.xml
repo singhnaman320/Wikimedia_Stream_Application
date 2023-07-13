@@ -13,6 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Wikimedia_Streaming</name>
 	<description>Wikimedia Project for Spring Boot integrated with Kafka</description>
+	<!-- Provide it to the parent project in multi model application-->
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -66,4 +68,7 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>Kafka_Producer_Wikimedia</module>
+	</modules>
 </project>
