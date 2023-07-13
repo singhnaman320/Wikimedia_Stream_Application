@@ -11,3 +11,7 @@ public class SpringBootConsumerApplication {
 		SpringApplication.run(SpringBootConsumerApplication.class, args);
 	}
 }
+
+
+
+// Consumer will consume the data and write it to database
