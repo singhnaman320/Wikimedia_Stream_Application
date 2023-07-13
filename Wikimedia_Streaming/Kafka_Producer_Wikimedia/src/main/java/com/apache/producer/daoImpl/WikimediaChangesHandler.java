@@ -9,10 +9,12 @@ import com.launchdarkly.eventsource.background.BackgroundEventHandler;
 public class WikimediaChangesHandler implements BackgroundEventHandler{
 
 	private KafkaTemplate<String, String> kafkaTemplate;
-	
-	public WikimediaChangesHandler(KafkaTemplate<String, String> kafkaTemplate) {
+	private String topic;
+
+	public WikimediaChangesHandler(KafkaTemplate<String, String> kafkaTemplate, String topic) {
 		super();
 		this.kafkaTemplate = kafkaTemplate;
+		this.topic = topic;
 	}
 
 	@Override
