@@ -27,6 +27,8 @@ public class KafkaDatabaseConsumerService {
 		LOGGER.info(String.format("Event message Consumed: %s", eventMessage));
 		
 		WikimediaData wikimediaData = new WikimediaData();
+		wikimediaData.setWikiEventData(eventMessage);
 		
+		wikimediaDataRepository.save(wikimediaData);
 	}
 }
