@@ -7,19 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-
 @Entity
 @Table(name = "wikimedia")
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
-@Getter
-@Setter
 public class WikimediaData {
 
 	@Id
@@ -28,4 +17,36 @@ public class WikimediaData {
 	
 	@Lob // In order to store large data we use @Lob
 	private String wikiEventData;
+
+	public Long getWikId() {
+		return wikId;
+	}
+
+	public void setWikId(Long wikId) {
+		this.wikId = wikId;
+	}
+
+	public String getWikiEventData() {
+		return wikiEventData;
+	}
+
+	public void setWikiEventData(String wikiEventData) {
+		this.wikiEventData = wikiEventData;
+	}
+
+	public WikimediaData(Long wikId, String wikiEventData) {
+		super();
+		this.wikId = wikId;
+		this.wikiEventData = wikiEventData;
+	}
+
+	public WikimediaData() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "WikimediaData [wikId=" + wikId + ", wikiEventData=" + wikiEventData + "]";
+	}
+	
 }
